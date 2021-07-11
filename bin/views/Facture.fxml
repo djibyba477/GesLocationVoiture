@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="377.0" prefWidth="625.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="controllers.FactureController">
+   <children>
+      <TextField fx:id="txtVoiture" layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="181.0" promptText="Voiture" />
+      <TextField fx:id="txtNom" layoutX="14.0" layoutY="73.0" prefHeight="25.0" prefWidth="181.0" promptText="Nom Complet" />
+      <TextField fx:id="txtMontant" layoutX="14.0" layoutY="173.0" prefHeight="25.0" prefWidth="181.0" promptText="Montant" />
+      <TextField fx:id="txtDateFin" layoutX="14.0" layoutY="221.0" prefHeight="25.0" prefWidth="181.0" promptText="Date limite" />
+      <Button fx:id="btnImprimer" defaultButton="true" layoutX="222.0" layoutY="314.0" mnemonicParsing="false" onAction="#click" prefHeight="34.0" prefWidth="181.0" text="imprimer">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="img" fitHeight="185.0" fitWidth="271.0" layoutX="302.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="268.0" text="Facture " textAlignment="JUSTIFY" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="23.0" />
+         </font>
+      </Label>
+      <Icon content="PRINT" layoutX="230.0" layoutY="331.0" prefHeight="26.0" prefWidth="53.0" style="-fx-background-image: C:/Users/Djiby/Downloads/im.ico;" />
+      <DatePicker fx:id="txtDate" layoutX="425.0" layoutY="34.0" promptText="Date du jour" />
+   </children>
+</AnchorPane>

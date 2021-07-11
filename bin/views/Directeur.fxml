@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="467.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DirecteurController">
+   <children>
+      <PieChart fx:id="pLocation" layoutX="43.0" layoutY="54.0" prefHeight="359.0" prefWidth="676.0" title="Somme Par location" />
+   </children>
+</AnchorPane>
