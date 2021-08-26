@@ -44,19 +44,19 @@
                   <TableColumn fx:id="colPermi" prefWidth="100.0" text="Permi" />
               </columns>
             </TableView>
-            <Pane layoutX="202.0" prefHeight="230.0" prefWidth="547.0" style="-fx-border-color: black;">
+            <Pane layoutX="221.0" layoutY="14.0" prefHeight="201.0" prefWidth="506.0" style="-fx-border-color: black;">
                <children>
-                  <ComboBox fx:id="cbxVoiture" layoutX="25.0" layoutY="23.0" onAction="#selected" prefHeight="30.0" prefWidth="174.0" promptText="Selectionner une voiture" />
-                  <Button fx:id="btnAjouter" layoutX="30.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="30.0" prefWidth="105.0" text="Ajouter" />
-                  <Button fx:id="btnAnnuler" layoutX="163.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="30.0" prefWidth="111.0" text="Annuler" />
-                  <TextField fx:id="txtNom" disable="true" layoutX="27.0" layoutY="74.0" prefHeight="25.0" prefWidth="153.0" promptText="Nom" />
-                  <TextField fx:id="txtPrenom" disable="true" layoutX="199.0" layoutY="74.0" prefHeight="25.0" prefWidth="153.0" promptText="Prenom" />
-                  <TextField fx:id="txtPiece" disable="true" layoutX="380.0" layoutY="74.0" prefHeight="25.0" prefWidth="153.0" promptText="Piece" />
-                  <TextField fx:id="txtPermi" disable="true" layoutX="30.0" layoutY="125.0" prefHeight="25.0" prefWidth="117.0" promptText="Permi" />
-                  <TextField fx:id="txtPrix" layoutX="157.0" layoutY="125.0" prefHeight="25.0" prefWidth="117.0" promptText="Prix" />
+                  <ComboBox fx:id="cbxVoiture" layoutX="17.0" layoutY="14.0" onAction="#selected" prefHeight="30.0" prefWidth="174.0" promptText="Selectionner une voiture" />
+                  <Button fx:id="btnAjouter" layoutX="23.0" layoutY="157.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="30.0" prefWidth="105.0" text="Ajouter" />
+                  <Button fx:id="btnAnnuler" layoutX="145.0" layoutY="157.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="30.0" prefWidth="111.0" text="Annuler" />
+                  <TextField fx:id="txtNom" disable="true" layoutX="17.0" layoutY="62.0" prefHeight="25.0" prefWidth="146.0" promptText="Nom" />
+                  <TextField fx:id="txtPrenom" disable="true" layoutX="180.0" layoutY="62.0" prefHeight="25.0" prefWidth="146.0" promptText="Prenom" />
+                  <TextField fx:id="txtPiece" disable="true" layoutX="346.0" layoutY="62.0" prefHeight="25.0" prefWidth="146.0" promptText="Piece" />
+                  <TextField fx:id="txtPermi" disable="true" layoutX="17.0" layoutY="113.0" prefHeight="25.0" prefWidth="117.0" promptText="Permi" />
+                  <TextField fx:id="txtPrix" layoutX="142.0" layoutY="113.0" prefHeight="25.0" prefWidth="105.0" promptText="Prix" />
                   <TextField fx:id="txtId" layoutX="380.0" layoutY="125.0" prefHeight="25.0" prefWidth="55.0" promptText="Id" visible="false" />
-                  <DatePicker fx:id="txtDateD" layoutX="283.0" layoutY="125.0" prefHeight="25.0" prefWidth="117.0" promptText="Date de Debut" />
-                  <DatePicker fx:id="txtDateR" layoutX="408.0" layoutY="125.0" prefHeight="25.0" prefWidth="117.0" promptText="Date de retour" />
+                  <DatePicker fx:id="txtDateD" layoutX="253.0" layoutY="113.0" prefHeight="25.0" prefWidth="117.0" promptText="Date de Debut" />
+                  <DatePicker fx:id="txtDateR" layoutX="377.0" layoutY="113.0" prefHeight="25.0" prefWidth="117.0" promptText="Date de retour" />
                </children></Pane>
             <TextField fx:id="txtRecherche" layoutX="476.0" layoutY="451.0" prefHeight="30.0" prefWidth="153.0" promptText="Rechercher ici" />
             <Button fx:id="btnRechercher" layoutX="629.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="30.0" prefWidth="105.0" text="Rechercher" />

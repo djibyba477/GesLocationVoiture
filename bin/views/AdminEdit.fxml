@@ -11,11 +11,15 @@
    <children>
       <Pane prefHeight="242.0" prefWidth="241.0">
          <children>
-            <ComboBox fx:id="cbxRole" layoutX="41.0" layoutY="61.0" prefHeight="33.0" prefWidth="159.0" promptText="Role" />
-            <TextField fx:id="txtLogin" layoutX="41.0" layoutY="105.0" prefHeight="33.0" prefWidth="159.0" promptText="Login" />
-            <Button fx:id="btnModifier" defaultButton="true" layoutX="82.0" layoutY="201.0" mnemonicParsing="false" onAction="#click" prefHeight="33.0" prefWidth="82.0" text="Modifier" />
-            <PasswordField fx:id="txtPassword" layoutX="43.0" layoutY="153.0" prefHeight="33.0" prefWidth="159.0" promptText="Password" />
-            <TextField fx:id="txtId" disable="true" layoutX="41.0" layoutY="14.0" prefHeight="33.0" prefWidth="159.0" promptText="ID" />
+            <Pane layoutX="7.0" layoutY="3.0" prefHeight="234.0" prefWidth="229.0" style="-fx-border-color: black;">
+               <children>
+                  <ComboBox fx:id="cbxRole" layoutX="34.0" layoutY="54.0" prefHeight="33.0" prefWidth="159.0" promptText="Role" />
+                  <TextField fx:id="txtLogin" layoutX="34.0" layoutY="98.0" prefHeight="33.0" prefWidth="159.0" promptText="Login" />
+                  <Button fx:id="btnModifier" defaultButton="true" layoutX="75.0" layoutY="194.0" mnemonicParsing="false" onAction="#click" prefHeight="33.0" prefWidth="82.0" text="Modifier" />
+                  <PasswordField fx:id="txtPassword" layoutX="36.0" layoutY="146.0" prefHeight="33.0" prefWidth="159.0" promptText="Password" />
+                  <TextField fx:id="txtId" disable="true" layoutX="34.0" layoutY="7.0" prefHeight="33.0" prefWidth="159.0" promptText="ID" />
+               </children>
+            </Pane>
          </children>
       </Pane>
    </children>

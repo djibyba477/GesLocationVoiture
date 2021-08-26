@@ -17,40 +17,41 @@ import models.Authentification;
 
 public class AuthentificationController {
 	Authentification au;
-	AuthentificationImpl auImpl=new AuthentificationImpl();
-	Stage primaryStage=new Stage();
-	Alert alert=new Alert(null);
-    @FXML
-    private TextField txtLogin;
+	AuthentificationImpl auImpl = new AuthentificationImpl();
+	Stage primaryStage = new Stage();
+	Alert alert = new Alert(null);
+	@FXML
+	private TextField txtLogin;
 
-    @FXML
-    private TextField txtPassword;
+	@FXML
+	private TextField txtPassword;
 
-    @FXML
-    private Button btnConnexion;
+	@FXML
+	private Button btnConnexion;
 
-    @FXML
-    private ComboBox<String> cbxRole;
-    
-    @FXML
-    void connexion(ActionEvent event) {
-    	if(txtLogin.getText().isEmpty() || txtPassword.getText().isEmpty() || cbxRole.getSelectionModel().isEmpty()) {
-    		alerter("Tous les champs sont obligatoire", "Information",'w');
-    	}else {
-    		au =new Authentification(txtLogin.getText().trim(), txtPassword.getText().trim(), cbxRole.getSelectionModel().getSelectedItem().trim());
-    			if(auImpl.connexion(au)!=-1) {
-    				Stage statge =(Stage) Stage.getWindows().get(0);
-    				statge.close();
-    				controller(cbxRole.getSelectionModel().getSelectedItem().trim());
-    		}else {
-    			vider();
-    			alerter("erreur connexion", "Information",'e');
-    		}
-    	}
-    }
-    
-    public void alerter(String Content,String title,char type) {
-    	switch (type) {
+	@FXML
+	private ComboBox<String> cbxRole;
+
+	@FXML
+	void connexion(ActionEvent event) {
+		if (txtLogin.getText().isEmpty() || txtPassword.getText().isEmpty() || cbxRole.getSelectionModel().isEmpty()) {
+			alerter("Tous les champs sont obligatoire", "Information", 'w');
+		} else {
+			au = new Authentification(txtLogin.getText().trim(), txtPassword.getText().trim(),
+					cbxRole.getSelectionModel().getSelectedItem().trim());
+			if (auImpl.connexion(au) != -1) {
+				Stage statge = (Stage) Stage.getWindows().get(0);
+				statge.close();
+				controller(cbxRole.getSelectionModel().getSelectedItem().trim());
+			} else {
+				vider();
+				alerter("erreur connexion", "Information", 'e');
+			}
+		}
+	}
+
+	public void alerter(String Content, String title, char type) {
+		switch (type) {
 		case 'i':
 			alert.setAlertType(AlertType.INFORMATION);
 			alert.setTitle(title);
@@ -70,9 +71,10 @@ public class AuthentificationController {
 			alert.show();
 			break;
 		}
-    }
-    private void fenetre(String path,String title) {
-    	try {
+	}
+
+	private void fenetre(String path, String title) {
+		try {
 			Parent root = FXMLLoader.load(getClass().getResource(path));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("../css/application.css").toExternalForm());
@@ -81,12 +83,13 @@ public class AuthentificationController {
 			primaryStage.setTitle(title);
 			primaryStage.centerOnScreen();
 			primaryStage.show();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-    }
-    public void controller(String nom) {
-    	switch (nom) {
+	}
+
+	public void controller(String nom) {
+		switch (nom) {
 		case "Administrateur":
 			fenetre("../views/Admin.fxml", "Administrateur");
 			break;
@@ -100,16 +103,17 @@ public class AuthentificationController {
 			fenetre("../views/Directeur.fxml", "Directeur");
 			break;
 		}
-    }
-    public void vider() {
-    	txtLogin.setText("");
+	}
+
+	public void vider() {
+		txtLogin.setText("");
 		txtPassword.setText("");
 		cbxRole.getSelectionModel().clearSelection();
-    }
-    public void initialize() {
-    	cbxRole.getItems().addAll("Directeur","Administrateur","Caissier","Chef caissier");
-    	
-    }
-   
-    
+	}
+
+	public void initialize() {
+		cbxRole.getItems().addAll("Directeur", "Administrateur", "Caissier", "Chef caissier");
+
+	}
+
 }

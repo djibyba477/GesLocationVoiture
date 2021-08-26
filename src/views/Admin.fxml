@@ -19,26 +19,6 @@
          <children>
             <AnchorPane prefHeight="443.0" prefWidth="727.0">
                <children>
-                  <Label layoutX="213.0" layoutY="36.0" prefHeight="16.0" prefWidth="134.0" text="Selectionner le role">
-                     <font>
-                        <Font name="Times New Roman Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="388.0" layoutY="34.0" prefHeight="16.0" prefWidth="134.0" text="Login">
-                     <font>
-                        <Font name="Times New Roman Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="564.0" layoutY="34.0" prefHeight="16.0" prefWidth="134.0" text="Password">
-                     <font>
-                        <Font name="Times New Roman Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <ComboBox fx:id="cbxRole" layoutX="213.0" layoutY="77.0" prefHeight="31.0" prefWidth="150.0" promptText="Role" />
-                  <TextField fx:id="txtLogin" layoutX="388.0" layoutY="77.0" prefHeight="31.0" prefWidth="149.0" promptText="Login" />
-                  <PasswordField fx:id="txtPassword" layoutX="564.0" layoutY="77.0" prefHeight="31.0" prefWidth="149.0" promptText="Password" />
-                  <Button fx:id="btnValider" defaultButton="true" layoutX="213.0" layoutY="133.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="31.0" prefWidth="98.0" text="Valider" />
-                  <Button fx:id="btnAnnuler" layoutX="330.0" layoutY="133.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="31.0" prefWidth="98.0" text="Annuler" />
                   <TableView fx:id="TabUtilisateur" layoutX="80.0" layoutY="212.0" onMouseClicked="#verifier" prefHeight="178.0" prefWidth="567.0">
                     <columns>
                       <TableColumn fx:id="colId" prefWidth="74.0" text="ID" />
@@ -59,6 +39,30 @@
                      </children>
                   </AnchorPane>
                   <Button fx:id="btnRafraichir" layoutX="298.0" layoutY="398.0" mnemonicParsing="false" onAction="#btnAction" prefHeight="31.0" prefWidth="98.0" text="Rafraichir" />
+                  <Pane layoutX="197.0" layoutY="14.0" prefHeight="178.0" prefWidth="522.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="29.0" prefHeight="16.0" prefWidth="134.0" text="Selectionner le role">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="189.0" layoutY="27.0" prefHeight="16.0" prefWidth="134.0" text="Login">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="365.0" layoutY="27.0" prefHeight="16.0" prefWidth="134.0" text="Password">
+                           <font>
+                              <Font name="Times New Roman Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cbxRole" layoutX="14.0" layoutY="70.0" prefHeight="31.0" prefWidth="150.0" promptText="Role" />
+                        <TextField fx:id="txtLogin" layoutX="189.0" layoutY="70.0" prefHeight="31.0" prefWidth="149.0" promptText="Login" />
+                        <PasswordField fx:id="txtPassword" layoutX="365.0" layoutY="70.0" prefHeight="31.0" prefWidth="149.0" promptText="Password" />
+                        <Button fx:id="btnValider" defaultButton="true" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="31.0" prefWidth="98.0" text="Valider" />
+                        <Button fx:id="btnAnnuler" layoutX="131.0" layoutY="126.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="31.0" prefWidth="98.0" text="Annuler" />
+                     </children>
+                  </Pane>
                </children>
             </AnchorPane>
          </children>

@@ -1,13 +1,10 @@
 package application;
-	
-
 
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
-
 
 public class Main extends Application {
 	@Override
@@ -21,11 +18,11 @@ public class Main extends Application {
 			primaryStage.setTitle("Authentification");
 			primaryStage.centerOnScreen();
 			primaryStage.show();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}

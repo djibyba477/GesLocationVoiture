@@ -6,5 +6,9 @@ import models.Reglement;
 
 public interface iReglement {
 	public List<Reglement> list();
+
 	public boolean ajouter(Reglement reglement);
+
+	public int verification(int id);
+
 }

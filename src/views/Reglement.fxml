@@ -14,20 +14,27 @@
             <TableView fx:id="tabLocation" layoutX="-1.0" onMouseClicked="#clickTab" prefHeight="214.0" prefWidth="750.0">
               <columns>
                 <TableColumn fx:id="colId" prefWidth="63.0" text="ID" />
-                <TableColumn fx:id="colNom" prefWidth="81.0" text="Nom" />
-                  <TableColumn fx:id="colPrenom" prefWidth="85.0" text="Prenom" />
-                  <TableColumn fx:id="colVoiture" prefWidth="83.0" text="Voiture" />
-                  <TableColumn fx:id="colPrix" prefWidth="68.0" text="Prix " />
-                  <TableColumn fx:id="colStatut" prefWidth="83.0" text="statut" />
-                  <TableColumn fx:id="colRestant" prefWidth="120.0" text="Montant restant" />
-                  <TableColumn fx:id="colDebut" prefWidth="85.0" text="Debut" />
-                  <TableColumn fx:id="colFin" text="Fin" />
+                <TableColumn fx:id="colNom" prefWidth="105.0" text="Nom" />
+                  <TableColumn fx:id="colPrenom" prefWidth="86.0" text="Prenom" />
+                  <TableColumn fx:id="colVoiture" prefWidth="132.0" text="Voiture" />
+                  <TableColumn fx:id="colPrix" prefWidth="115.0" text="Prix " />
+                  <TableColumn fx:id="colDebut" prefWidth="131.0" text="Debut" />
+                  <TableColumn fx:id="colFin" prefWidth="116.0" text="Fin" />
               </columns>
             </TableView>
          </children></Pane>
-      <TextField fx:id="txtMontant" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="173.0" promptText="Montant" />
-      <Button fx:id="btnValider" layoutX="14.0" layoutY="74.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="102.0" text="Valider" />
-      <TextField fx:id="txtRestant" disable="true" layoutX="213.0" layoutY="31.0" prefHeight="25.0" prefWidth="132.0" promptText="Restant" />
-      <Button fx:id="btnAnnuler" layoutX="128.0" layoutY="74.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="102.0" text="Annuler" />
+      <Pane layoutX="23.0" layoutY="14.0" prefHeight="134.0" prefWidth="707.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="txtRecherche" layoutX="418.0" layoutY="24.0" prefHeight="25.0" prefWidth="173.0" promptText="Rechercher ici ..." />
+            <Button fx:id="btnRechercher" layoutX="591.0" layoutY="24.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="102.0" text="Rechercher" />
+            <TextField fx:id="txtMontant" layoutX="14.0" layoutY="55.0" prefHeight="25.0" prefWidth="149.0" promptText="Montant" />
+            <Button fx:id="btnValider" layoutX="14.0" layoutY="95.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="102.0" text="Valider" />
+            <Button fx:id="btnAnnuler" layoutX="129.0" layoutY="95.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="102.0" text="Annuler" />
+            <TextField fx:id="txtRestant" disable="true" layoutX="187.0" layoutY="55.0" promptText="restant a payer!" />
+            <TextField fx:id="txtPrenom" disable="true" layoutX="14.0" layoutY="14.0" promptText="Prenom" />
+            <TextField fx:id="txtNom" disable="true" layoutX="187.0" layoutY="14.0" promptText="Nom" />
+            <Button fx:id="btnFacture" layoutX="244.0" layoutY="95.0" mnemonicParsing="false" onAction="#click" prefHeight="25.0" prefWidth="102.0" text="Facture" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
